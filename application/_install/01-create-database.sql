@@ -12,10 +12,10 @@ CREATE TABLE `events` (
 CREATE TABLE `tickets` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `isactive` tinyint(1) DEFAULT NULL,
-  `lineid` int(11) DEFAULT NULL,
   `eventid` int(11) DEFAULT NULL,
   `number` int(11) DEFAULT NULL,
   `ip` varchar(50) DEFAULT NULL,
   `code` varchar(5) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  CONSTRAINT `tickets_ibfk_1` FOREIGN KEY (`id`) REFERENCES `events` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

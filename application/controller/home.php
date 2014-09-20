@@ -19,4 +19,12 @@ class Home extends Controller
         // load views. within the views we can echo out $songs and $amount_of_songs easily
         $this->loadViewWithTemplates("home","index");
     }
+
+    public function getEvents($latitude,$longitude){
+    	echo json_encode(array(
+		    		array('title'=>"TITLE1",'description' => "description1"),
+    				array('title'=>"TITLE2",'description' => "description2"),
+    				array('title'=>"TITLE4",'description' => "description3")
+    			));
+    }
 }

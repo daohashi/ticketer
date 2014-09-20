@@ -53,7 +53,14 @@ class Application
                 }
             } else {
                 // default/fallback: call the index() method of a selected controller
-                $this->url_controller->index();
+                if(method_exists($this->url_controller,'index')){
+                    $this->url_controller->index();
+                }else{
+                    // invalid URL, so simply show home/index
+                    require './application/controller/home.php';
+                    $home = new Home();
+                    $home->index();
+                }
             }
         } else {
             // invalid URL, so simply show home/index

@@ -10,10 +10,7 @@
  * @license http://opensource.org/licenses/MIT MIT License
  */
 
-// load the (optional) Composer auto-loader
-if (file_exists('vendor/autoload.php')) {
-    require 'vendor/autoload.php';
-}
+session_start();
 
 // load application config (error reporting etc.)
 require 'application/config/config.php';

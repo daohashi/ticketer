@@ -12,12 +12,19 @@ class Admin extends Controller
 {
 	function __construct(){
 		parent::__construct();
-		if(!isset($_SESSION['owner'])){
+		if(!isset($_SESSION['verified'])){
 			die("You must be a verified event planner to access this action");
 		}
 	}
 
-	function produceTicket(){
+	/**
+	 * Generates a ticket for someone without a phone
+	 * @return JSON data wrt the ticket
+	 */
+	public function produceTicket(){
+		$wordhelper = $this->loadHelper("words");
+		$word = $wordhelper->getWord();
+
 		
 	}
 }

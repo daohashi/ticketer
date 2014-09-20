@@ -49,4 +49,24 @@ class Controller
         // return new model (and pass the database connection to the model)
         return new $model_name($this->db);
     }
+
+    /**
+     * load the view in the given folder
+     * @param  string $folder   folder name
+     * @param  string $viewname view name
+     */
+    public function loadView($folder,$viewname){
+        require "application/views/$folder/$viewname.php";
+    }
+
+    /**
+     * load the view in the given folder but with templates
+     * @param  string $folder   folder name
+     * @param  string $viewname view name
+     */
+    public function loadViewWithTemplates($folder,$viewname){
+        $this->loadView("_templates","header");
+        $this->loadView($folder,$viewname);
+        $this->loadView("_templates","footer");
+    }
 }

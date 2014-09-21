@@ -21,7 +21,6 @@
 </div>
 
 <div class="Middle" id="navigation">
-	<button type="button" class="btn" id="listButton">List</button>
 	<button type="button" class="btn" id="nextButton">Next</button>
 	<button type="button" class="btn" id="addButton">Add</button>
 </div>

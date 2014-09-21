@@ -149,9 +149,9 @@ li:hover
     margin-top:30px;
 }
 
-#nextButton
+#nextButton,#addButton
 {
-width:40%;
+width:30%;
 }
 
 /*Description */

@@ -31,18 +31,41 @@ class Home extends Controller
     }
 
     /**
+     * give user a ticket (checks if user already has a ticket)
+     */
+    public function getTicket($eventid){
+        $sessionid = session_id();
+        $ticketmodel = $this->loadModel("ticketsmodel");
+        $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
+        if(isset($ticket['id'])){ //check if ticket exists
+            throw new Exception("You already have a ticket for this event");
+        }else{
+            $wordhelper = $this->loadHelper("words");
+
+            $word = $wordhelper->getWord();
+            $count = $ticketmodel->getTotalTicketCount($eventid)+1;
+            $ip = $_SERVER['REMOTE_ADDR'];
+
+            $ticketmodel->enterTicket(1,$eventid,$count,$ip,$word,$sessionid);
+        }
+
+        // load views. within the views we can echo out $songs and $amount_of_songs easily
+        header('Location: '. URL . '/home/eventpageinfo/'.$eventid);
+    }
+
+    /**
      * returns ticket information if it exists for user or 
      * @param  int $eventId event id
      * @return JSON          event information
      */
-    public function getEventPageInfo($eventid){
+    public function eventPageInfo($eventid){
 
         $sessionid = session_id();
         $ticketmodel = $this->loadModel("ticketsmodel");
         $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
 
         require 'application/views/_templates/header.php';
-        if(isset($ticket['id'])){
+        if(isset($ticket['id'])){ //check if ticket exists
             require 'application/views/home/ticket.php';
         }else{
             $event = $this->loadModel("eventsmodel")->getEventById($eventid);

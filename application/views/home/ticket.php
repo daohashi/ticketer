@@ -2,10 +2,10 @@
 Hack the North
 </div>
 <div class="Middle" id="ticketNumber">
-	67
+	<?php echo $ticket['number']; ?>
 </div>
 <div class="Middle" id="password">
-	Bear
+	<?php echo $ticket['code']; ?>
 </div>
 
 

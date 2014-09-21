@@ -42,6 +42,7 @@ class Admin extends Controller
 	 * @param  int   $id ticket id
 	 */
 	public function next($id){
+		$this->_validate();
 		$ticketmodel = $this->loadModel('ticketsmodel');
 		$ticketmodel->deactivateTicket($id);
 
@@ -56,11 +57,31 @@ class Admin extends Controller
 	 * Generates a ticket for someone without a phone
 	 * @return JSON data wrt the ticket
 	 */
-	public function produceTicket(){
+	public function issue(){
 		$this->_validate();
+		$ticketmodel = $this->loadModel('ticketsmodel');
+
 		$wordhelper = $this->loadHelper("words");
 		$word = $wordhelper->getWord();
+		$sessionid=session_id();
+		$eventid = $_SESSION['verifiedid'];
+		$ip=$_SERVER['REMOTE_ADDR'];
+	            $count = $ticketmodel->getTotalTicketCount($eventid)+1;
 
-		
+		try{
+			$ticketmodel->enterTicket(1,$eventid,$count,$ip,$word,$sessionid);
+		}catch(Exception $e){
+			die(json_encode(0));
+		}
+
+		echo json_encode(array(
+				'id'=>$this->db->lastInsertId(),
+				'code'=>$word,
+				'ip'=>$ip,
+				'number'=>$count,
+				'session'=>$sessionid,
+				'eventid'=>$eventid,
+				'isactive'=>1
+			));
 	}
 }

@@ -7,7 +7,20 @@ $("#nextButton").on('click',function(){
 				$("#password").html(result.code);
 				$("#number").html(result.number);
 			}else{
-			    	alert("There are no more tickets right now");
+			    	$("#password").html("");
+				$("#number").html("");
+			 }
+		 }});
+});
+
+$("#addButton").on('click',function(){
+	$.ajax({url:"/admin/issue",success:function(result){
+			if (result!=0)
+			{
+				result = JSON.parse(result);
+				alert("Ticket generated:\nNumber: "+result.number+"\nCode: "+result.code);
+			}else{
+			    	alert("Failed to issue ticket");
 			 }
 		 }});
 });

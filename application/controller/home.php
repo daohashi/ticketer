@@ -86,7 +86,7 @@ class Home extends Controller
     }
 
     /**
-     * returns ticket information if it exists for user or 
+     * returns ticket information if it exists for user or  the event
      * @param  int $eventId event id
      * @return JSON          event information
      */
@@ -94,8 +94,10 @@ class Home extends Controller
 
         $sessionid = session_id();
         $ticketmodel = $this->loadModel("ticketsmodel");
+        $eventmodel = $this->loadModel("eventsmodel");
+        
         $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
-
+        $event = $eventmodel->getEventById($eventid);
         require 'application/views/_templates/header.php';
         if(isset($ticket['id'])){ //check if ticket exists
             require 'application/views/home/ticket.php';

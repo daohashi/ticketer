@@ -3,7 +3,7 @@
 <div class="Middle" id="eventName">
 	<div class='mcontain'>
 		<div class='mcontaincell'>
-Hack the North
+			<?php echo $event['name'] ?>
 </div>
 </div>
 </div>

@@ -17,7 +17,6 @@ class EventsModel extends Model
         }catch (Exception $e){
             throw new Exception("Error trying to get events by latitude and longitude");
         }
-        echo date('Y-m-d H:i:s');
         return $query->fetchAll();
     }
 
@@ -33,6 +32,6 @@ class EventsModel extends Model
         }catch (Exception $e){
             throw new Exception("Error trying to get event by id");
         }
-        return $query->fetchAll();
+        return $query->fetch();
     }
 }

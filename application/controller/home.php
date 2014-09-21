@@ -17,7 +17,9 @@ class Home extends Controller
     public function index()
     {
         // load views. within the views we can echo out $songs and $amount_of_songs easily
-        $this->loadViewWithTemplates("home","index");
+        require 'application/views/_templates/header.php';
+        require 'application/views/home/index.php';
+        require 'application/views/_templates/footer.php';
     }
 
     public function getEvents($latitude,$longitude){

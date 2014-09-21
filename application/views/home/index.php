@@ -1,4 +1,17 @@
-<div class="container">
-    <h2>You are in the View: application/views/home/index.php (everything in the box comes from this file)</h2>
-    <p>In a real application this could be the homepage.</p>
+<div id="Coordinates">
+	HI
 </div>
+<div class="Middle" >
+	<button type="button" class="btn" id="HostButton">Host / Edit</button>
+</div>
+
+<div class="Middle" id="Events">
+	<ul type="none" id="Lists">
+
+	</ul>
+
+</dl>
+</div>
+
+<!-- our JavaScript -->
+    <script src="<?php echo URL; ?>public/js/EntryPage.js"></script>

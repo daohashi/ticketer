@@ -8,6 +8,8 @@ body{
     line-height:150%;
 }
 
+/*Index Page CSS*/
+
 .btn {
     background: #3498db;
     background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
@@ -23,6 +25,8 @@ body{
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+
+
 }
 
 .btn:hover {
@@ -33,4 +37,75 @@ body{
     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
+    cursor:pointer;
 }
+
+.Middle
+{
+    width:50%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#Events
+{
+}
+
+li {
+    border-bottom:1px solid black;
+    padding-bottom:15px;
+    padding-top:15px;
+    margin:2px;
+}
+
+li:hover
+{
+    cursor:pointer;
+}
+
+/*Ticket Page CSS*/
+#eventName,#password,#estimateTime
+{
+
+}
+
+#eventName
+{
+    margin-top:50px;
+    font-size: 250%;
+}
+
+#ticketNumber
+{
+    font-size: 850%;
+    margin-top:15%;
+}
+
+#password
+{
+    margin-top:180px;
+    font-size: 450%;
+    color:#3498db;
+}
+
+#estimateTime
+{
+    margin-top:12%;
+    font-size: 200%;
+}
+
+
+/*Media Query*/
+@media all and (max-width: 480px) {
+    body {
+        font-size: 20px; } }
+@media all and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 24px; } }
+@media all and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 30px; } }
+@media all and (min-width: 1281px) {
+    body {
+        font-size: 20px; } }

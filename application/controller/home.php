@@ -38,7 +38,10 @@ class Home extends Controller
     public function getTicket($eventid){
         $sessionid = session_id();
         $ticketmodel = $this->loadModel("ticketsmodel");
+        $eventmodel = $this->loadModel("eventsmodel");
+
         $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
+        $event = $eventmodel->getEventById($eventid);
         if(isset($ticket['id'])){ //check if ticket exists
             throw new Exception("You already have a ticket for this event");
         }else{

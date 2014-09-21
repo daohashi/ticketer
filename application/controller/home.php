@@ -91,12 +91,24 @@ class Home extends Controller
             $ticketmodel = $this->loadModel("ticketsmodel");
 
             $event = $eventmodel->getEventById($_SESSION['verifiedid']);
-            $ticket = $ticketmodel->getNextTicket();
+            $ticket = $ticketmodel->getNextTicket($_SESSION['verifiedid']);
 
 
             require 'application/views/_templates/header.php';
             require 'application/views/home/owner.php';
             require 'application/views/_templates/footer.php';
+    }
+
+    public function ajaxEventInfo($eventid){
+         $sessionid = session_id();
+        $ticketmodel = $this->loadModel("ticketsmodel");
+        $eventmodel = $this->loadModel("eventsmodel");
+
+        $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
+        $nextTicket = $ticketmodel->getNextTicket($eventid);
+        $event = $eventmodel->getEventById($eventid);
+        
+        echo json_encode(array('ticket'=>$ticket,'nextTicket'=>$nextTicket,'event'=>$event));
     }
 
     /**

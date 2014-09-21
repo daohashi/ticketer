@@ -21,6 +21,21 @@ class EventsModel extends Model
     }
 
     /**
+     * Gets event information based on event code
+     */
+    public function getEventByCode($code)
+    {
+        try{
+            $sql = "SELECT * FROM events WHERE code = :code";
+            $query = $this->db->prepare($sql);
+            $query->execute(array(':code'=>$code));
+        }catch (Exception $e){
+            throw new Exception("Error trying to get event by code");
+        }
+        return $query->fetch();
+    }
+
+    /**
      * Gets event information based on event id
      */
     public function getEventById($id)

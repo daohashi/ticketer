@@ -42,7 +42,7 @@ $("#settings").on("click",function(){$("#Login").slideToggle(800);});
 $("#textbox").bind("keypress", function(event) {
     if(event.which == 13) {
     event.preventDefault();
-        $.ajax({url:"/home/admin/verify/" + $("#textbox").val(),success:function(result){
+        $.ajax({url:"/admin/verify/" + $("#textbox").val(),success:function(result){
 $("#Login").slideUp(800);
 	$("#settings").hide();
     $("#unlocked").show();
@@ -53,9 +53,12 @@ $("#Login").slideUp(800);
 });
 
 $("#submitbutton").on("click",function(){
+$.ajax({url:"/admin/verify/" + $("#textbox").val(),success:function(result){
 $("#Login").slideUp(800);
 	$("#settings").hide();
     $("#unlocked").show();
+	 }
+	});
 
 });
 

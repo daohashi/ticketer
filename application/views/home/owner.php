@@ -1,19 +1,23 @@
+<div id="Coordinates">
+</div>
 <div class="Middle" id="eventName">
 	<div class='mcontain'>
 		<div class='mcontaincell'>
-Hack the North
+			<?php echo $event['name'] ?>
 </div>
 </div>
 </div>
-<div class="Middle" id="ticketNumber" style="height:55%">
+<div class="Middle" id="ticketNumber">
 	<div class='mcontain'>
 		<div class='mcontaincell'>
-67
+			<!-- change to current ticket number -->
+	<?php echo $ticket['number']; ?>
 </div>
 </div>
 </div>
-<div class="Middle" id="password" >
-	Bear
+
+<div class="Middle" id="password">
+	<?php echo $ticket['code']; ?>
 </div>
 
 <div class="Middle" id="navigation">

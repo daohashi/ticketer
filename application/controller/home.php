@@ -22,12 +22,14 @@ class Home extends Controller
         require 'application/views/_templates/footer.php';
     }
 
+    /**
+     * get events close to the latitude and logitude points
+     */
     public function getEvents($latitude,$longitude){
-    	echo json_encode(array(
-		    		array('id'=>1,'title'=>"TITLE1",'description' => "description1"),
-    				array('id'=>2,'title'=>"TITLE2",'description' => "description2"),
-    				array('id'=>3,'title'=>"TITLE4",'description' => "description3")
-    			));
+    	$eventmodel = $this->loadModel("eventsmodel");
+            $events = $eventmodel->getEventsByLocation($latitude,$longitude,5);
+
+            echo json_encode($events);
     }
 
     /**

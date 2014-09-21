@@ -23,7 +23,10 @@ a, a:visited{
     color:white;
     height:2px;
     background:black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+    background: -webkit-radial-gradient(white,black, white); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(white,black, white); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(white,black, white); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(white,black, white); /* Standard syntax */
 }
 
 
@@ -141,7 +144,7 @@ li:hover
 #eventName
 {
     height:20%;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 #ticketNumber

@@ -1,7 +1,7 @@
 <?php
 class Words{
 	//List of codewords to be used for tickets
-	private $wordlist = ['apple','clock','clone','cloud','house','mouse','onion','sheep','wheel'];
+	private $wordlist = ['apple','artsy','blame','brain','clock','clone','cloud','doors','dress','email','','great','green','house','mouse','onion','sheep','wheel','white'];
 
 	/**
 	 * returns a random  5 letter word

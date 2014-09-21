@@ -1,0 +1,19 @@
+#ticketNumber
+{
+    height:40%;
+    font-size: 650%;
+}
+
+#password
+{
+    height:20%;
+    font-size: 450%;
+    color:#3498db;
+}
+
+/*Owner CSS*/
+#navigation
+{
+    height:20%;
+    margin-top:30px;
+}

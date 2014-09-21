@@ -1,3 +1,6 @@
+
+    <!-- css -->
+    <link href="<?php echo URL; ?>public/css/owner.css" rel="stylesheet">
 <div class="Middle" id="eventName">
 	<div class='mcontain'>
 		<div class='mcontaincell'>

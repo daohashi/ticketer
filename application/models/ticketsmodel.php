@@ -30,6 +30,24 @@ class TicketsModel extends Model
      * @param  string $sessionid session id
      * @return int            number of tickets
      */
+    public function getTotalTicketCount($eventid){
+        try{
+            $sql = "SELECT count(id) AS amount_of_tickets FROM tickets WHERE eventid = :eventid";
+            $query = $this->db->prepare($sql);
+            $query->execute(array(':eventid'=>$eventid));
+            $num = $query->fetch();
+        }catch (Exception $e){
+            throw new Exception("Could not check if ticket exists");
+        }
+        return $num['amount_of_tickets'];
+    }
+
+    /**
+     * get the ticket count for a certain session and event
+     * @param  int $eventid   event id
+     * @param  string $sessionid session id
+     * @return int            number of tickets
+     */
     public function getTicketCount($eventid,$sessionid){
         try{
             $sql = "SELECT count(id) AS amount_of_tickets FROM tickets WHERE eventid = :eventid AND sessionid = :sessionid";
@@ -54,6 +72,6 @@ class TicketsModel extends Model
         }catch (Exception $e){
             throw new Exception("Could not select a ticket");
         }
-        return $query->fetchAll();
+        return $query->fetch();
     }
 }

@@ -10,13 +10,13 @@ Hack the North
 <div class="Middle" id="ticketNumber">
 	<div class='mcontain'>
 		<div class='mcontaincell'>
-67
+	<?php echo $ticket['number']; ?>
 </div>
 </div>
 </div>
 
 <div class="Middle" id="password">
-	Bear
+	<?php echo $ticket['code']; ?>
 </div>
 
 

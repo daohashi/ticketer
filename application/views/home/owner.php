@@ -1,3 +1,5 @@
+<div id="Coordinates">
+</div>
 <div class="Middle" id="eventName">
 	<div class='mcontain'>
 		<div class='mcontaincell'>
@@ -5,7 +7,7 @@
 </div>
 </div>
 </div>
-<div class="Middle" id="ticketNumber" style="height:55%">
+<div class="Middle" id="ticketNumber">
 	<div class='mcontain'>
 		<div class='mcontaincell'>
 			<?php echo $ticket['number'];?>
@@ -17,7 +19,6 @@
 </div>
 
 <div class="Middle" id="navigation">
-	<button type="button" class="btn" id="listButton">List</button>
 	<button type="button" class="btn" id="nextButton">Next</button>
 	<button type="button" class="btn" id="addButton">Add</button>
 </div>

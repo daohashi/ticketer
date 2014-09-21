@@ -40,22 +40,37 @@ $('ul#Lists').empty();
 $("#settings").on("click",function(){$("#Login").slideToggle(800);});
 
 $("#textbox").bind("keypress", function(event) {
-    if(event.which == 13) {
+    if(event.which == 13 && $("#textbox").val()!= "") {
     event.preventDefault();
-        $.ajax({url:"/home/admin/verify/" + $("#textbox").val(),success:function(result){
-$("#Login").slideUp(800);
-	$("#settings").hide();
-    $("#unlocked").show();
-	 }
-	});
+        $.ajax({url:"/admin/verify/" + $("#textbox").val(),success:function(result){
+		if (result!=0)
+		{
+			$("#Login").slideUp(800);
+			$("#settings").hide();
+			 $("#unlocked").show();
+		}else{
+		    	alert("You entered a invalid code");
+		 }
+	 }});
 
     }
 });
 
 $("#submitbutton").on("click",function(){
-$("#Login").slideUp(800);
-	$("#settings").hide();
-    $("#unlocked").show();
+	if ($("#textbox").val()!= "")
+	{
+		$.ajax({url:"/admin/verify/" + $("#textbox").val(),success:function(result){
+			if (result!=0)
+			{
+				$("#Login").slideUp(800);
+				$("#settings").hide();
+				 $("#unlocked").show();
+			}else{
+			    	alert("You entered a invalid code");
+			 }
+		 }});
+	}
+
 
 });
 

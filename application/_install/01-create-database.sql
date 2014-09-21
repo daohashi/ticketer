@@ -7,6 +7,7 @@ CREATE TABLE `events` (
   `time` datetime DEFAULT NULL,
   `issuetime` datetime DEFAULT NULL,
   `endtime` datetime DEFAULT NULL,
+  `code` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 

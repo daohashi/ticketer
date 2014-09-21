@@ -22,7 +22,7 @@ function givePosition(position) {
 }
 
 function addItem(listOfEvents){
-
+$('ul#Lists').empty();
 	for (i=0; i < listOfEvents.length; i++)
 	{
 		if (listOfEvents[i].status)
@@ -37,7 +37,27 @@ function addItem(listOfEvents){
 	
 }
 
+$("#settings").on("click",function(){$("#Login").slideToggle(800);});
 
+$("#textbox").bind("keypress", function(event) {
+    if(event.which == 13) {
+    event.preventDefault();
+        $.ajax({url:"/home/admin/verify/" + $("#textbox").val(),success:function(result){
+$("#Login").slideUp(800);
+	$("#settings").hide();
+    $("#unlocked").show();
+	 }
+	});
+
+    }
+});
+
+$("#submitbutton").on("click",function(){
+$("#Login").slideUp(800);
+	$("#settings").hide();
+    $("#unlocked").show();
+
+});
 
 getLocation();
 

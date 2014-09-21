@@ -8,7 +8,7 @@ var additionalTime = averageTime*(ticketNumber-currentTicket);
 var currentdate  = new Date();
 var currenttime = currentdate.getHours()*60 + currentdate.getMinutes() ;
 var estimatedtime = additionalTime + currenttime
-document.getElementById("Coordinates").innerHTML = Math.floor(estimatedtime/60) + " : " + ("0" + estimatedtime%60).slice(-2);
+//document.getElementById("Coordinates").innerHTML = Math.floor(estimatedtime/60) + " : " + ("0" + estimatedtime%60).slice(-2);
 	
 }
 findTime();

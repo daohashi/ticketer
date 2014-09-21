@@ -1,5 +1,5 @@
 <div id="Login">
-<input type="text" name="pname" id="textbox">
+<input type="password" name="pname" id="textbox">
 <input type="submit" name="psubmit" id="submitbutton">
 
 </div>

@@ -1,5 +1,5 @@
-<div id="Coordinates">
-</div>
+<!--<div id="Coordinates">
+</div>-->
 <div class="Middle" id="eventName">
 	<div class='mcontain'>
 		<div class='mcontaincell'>

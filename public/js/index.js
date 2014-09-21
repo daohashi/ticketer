@@ -27,11 +27,14 @@ $('ul#Lists').empty();
 	{
 		if (listOfEvents[i].hasticket >= 1)
 		{
-		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li style="background-color:grey;">' + listOfEvents[i].name + " - " + listOfEvents[i].count + "</li></a>");	
+		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li class="bbblueglow">' + listOfEvents[i].name + " - " + listOfEvents[i].count + "</li></a>");	
 		}
 		else
 		{
 		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li>' + listOfEvents[i].name + " - " + listOfEvents[i].count + "</li></a>");
+		}
+		if(i+1<listOfEvents.length){
+			$('ul#Lists').append("<div class='sexy_line'></div>");
 		}
 	}
 	

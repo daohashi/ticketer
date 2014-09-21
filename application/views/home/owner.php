@@ -1,5 +1,3 @@
-<div id="Coordinates">
-</div>
 <div class="Middle" id="eventName">
 	<div class='mcontain'>
 		<div class='mcontaincell'>
@@ -22,7 +20,3 @@
 	<button type="button" class="btn" id="nextButton">Next</button>
 	<button type="button" class="btn" id="addButton">Add</button>
 </div>
-
-
-<!-- our JavaScript -->
-    <script src="<?php echo URL; ?>public/js/ticket.js"></script>

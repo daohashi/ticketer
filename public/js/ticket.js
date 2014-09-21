@@ -1,34 +1,15 @@
-var listOfEvents;
-$("#HostButton").on("click",getLocation);
-
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(givePosition);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-function givePosition(position) {
-	 $.ajax({url:"/home/getEvents/" + position.coords.latitude + "/" + position.coords.longitude,success:function(result){
-	 	listOfEvents = JSON.parse(result);
-	 	document.getElementById("Coordinates").innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude; 
-    
-	addItem(listOfEvents);
-	 }
-
-	});
-
-}
-
-function addItem(listOfEvents){
-
-	for (i=0; i < listOfEvents.length; i++)
-	{
-		$('ul#Lists').append("<li>" + listOfEvents[i].title + "</li>");
-	}
+function findTime(){
+	// need current ticket, ticket number, and average time
+	console.log("hi")
+var averageTime=1;
+var currentTicket=40;
+var ticketNumber=60;
+var additionalTime = averageTime*(ticketNumber-currentTicket);
+var currentdate  = new Date();
+var currenttime = currentdate.getHours()*60 + currentdate.getMinutes() ;
+var estimatedtime = additionalTime + currenttime
+document.getElementById("Coordinates").innerHTML = Math.floor(estimatedtime/60) + " : " + ("0" + estimatedtime%60).slice(-2);
 	
 }
-
-getLocation();
-
+findTime();
+setInterval(findTime, 60000);

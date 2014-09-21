@@ -25,10 +25,21 @@ function addItem(listOfEvents){
 
 	for (i=0; i < listOfEvents.length; i++)
 	{
-		$('ul#Lists').append("<li >" + listOfEvents[i].title + "</li>");
+		if (listOfEvents[i].status)
+		{
+		$('ul#Lists').append('<li style="background-color:grey;">' + listOfEvents[i].title + "</li>");	
+		}
+		else
+		{
+		$('ul#Lists').append('<li>' + listOfEvents[i].title + "</li>");
+		}
+		
 	}
 	
 }
 
+
+
 getLocation();
+
 

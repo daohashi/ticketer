@@ -70,7 +70,7 @@ class Home extends Controller
         $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
         $event = $eventmodel->getEventById($eventid);
         if(isset($ticket['id'])){ //check if ticket exists
-            die("You already have a ticket for this event");
+            header('Location: '. URL . '/home/eventpageinfo/'.$eventid);
         }else{
             $wordhelper = $this->loadHelper("words");
 

@@ -79,6 +79,10 @@ a, a:visited{
    vertical-align: middle;
 }
 
+#Events ul a{
+    font-size:150%;
+}
+
 #Login
 {
 display:none;

@@ -38,6 +38,21 @@ class Admin extends Controller
 	}
 
 	/**
+	 * unactivates a certain ticket id and sends back a new one
+	 * @param  int   $id ticket id
+	 */
+	public function next($id){
+		$ticketmodel = $this->loadModel('ticketsmodel');
+		$ticketmodel->deactivateTicket($id);
+
+		$ticket = $ticketmodel->getNextTicket();
+		if(!isset($ticket['id'])){
+			$ticket=0;
+		}
+		echo json_encode($ticket);
+	}
+
+	/**
 	 * Generates a ticket for someone without a phone
 	 * @return JSON data wrt the ticket
 	 */

@@ -60,6 +60,16 @@ class TicketsModel extends Model
         return $num['amount_of_tickets'];
     }
 
+    public function deactivateTicket($ticketid){
+        try{
+            $sql = "UPDATE tickets SET isactive=0 WHERE id = :tickid";
+            $query = $this->db->prepare($sql);
+            $query->execute(array(':tickid'=>$ticketid));
+        }catch (Exception $e){
+            throw new Exception("Could not deactivate given ticket");
+        }
+    }
+
     /**
      * Get users ticket information by event id
      */

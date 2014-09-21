@@ -64,7 +64,7 @@ $("#submitbutton").on("click",function(){
 			{
 				$("#Login").slideUp(800);
 				$("#settings").hide();
-				 $("#unlocked").show();
+				$("#unlocked").show();
 			}else{
 			    	alert("You entered a invalid code");
 			 }
@@ -73,7 +73,10 @@ $("#submitbutton").on("click",function(){
 
 
 });
-
+if(verified){
+	$("#settings").hide();
+	$("#unlocked").show();
+}
 getLocation();
 
 

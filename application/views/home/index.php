@@ -1,5 +1,4 @@
 <div id="Login">
-
 <input type="text" name="pname" id="textbox">
 <input type="submit" name="psubmit" id="submitbutton">
 
@@ -18,4 +17,7 @@
 </div>
 
 <!-- our JavaScript -->
+    <script>
+var verified = <?php echo json_encode(isset($_SESSION['verified']));?>;
+    </script>
     <script src="<?php echo URL; ?>public/js/index.js"></script>

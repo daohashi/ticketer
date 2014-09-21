@@ -74,4 +74,23 @@ class TicketsModel extends Model
         }
         return $query->fetch();
     }
+
+    /**
+     * Get next users ticket information
+     */
+    public function getNextTicket()
+    {
+        if(!isset($_SESSION['verifiedid'])){
+            die("You must be verified for this action");
+        }
+        try{
+            //get the oldest ticket still active
+            $sql = "SELECT * FROM tickets WHERE eventid = :eventid AND isactive = 1 ORDER BY id ASC";
+            $query = $this->db->prepare($sql);
+            $query->execute(array(':eventid'=>$_SESSION['verifiedid']));
+        }catch (Exception $e){
+            throw new Exception("Could not select a ticket");
+        }
+        return $query->fetch();
+    }
 }

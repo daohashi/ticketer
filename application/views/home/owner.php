@@ -1,19 +1,19 @@
 <div class="Middle" id="eventName">
 	<div class='mcontain'>
 		<div class='mcontaincell'>
-Hack the North
+			<?php echo $event['name'];?>
 </div>
 </div>
 </div>
 <div class="Middle" id="ticketNumber" style="height:55%">
 	<div class='mcontain'>
 		<div class='mcontaincell'>
-67
+			<?php echo $ticket['number'];?>
 </div>
 </div>
 </div>
 <div class="Middle" id="password" >
-	Bear
+	<?php echo $ticket['code'];?>
 </div>
 
 <div class="Middle" id="navigation">

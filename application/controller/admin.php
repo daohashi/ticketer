@@ -12,7 +12,7 @@ class Admin extends Controller
 {
 	private function _validate(){
 		if(!isset($_SESSION['verified'])){
-			die("You must be a verified to access this action");
+			die("You must be verified to access this action");
 		}
 	}
 

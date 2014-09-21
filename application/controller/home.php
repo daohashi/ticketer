@@ -85,6 +85,19 @@ class Home extends Controller
         header('Location: '. URL . '/home/eventpageinfo/'.$eventid);
     }
 
+    private function loadEventPageAsAdmin(){
+            $eventmodel = $this->loadModel("eventsmodel");
+            $ticketmodel = $this->loadModel("ticketsmodel");
+
+            $event = $eventmodel->getEventById($_SESSION['verifiedid']);
+            $ticket = $ticketmodel->getNextTicket();
+
+
+            require 'application/views/_templates/header.php';
+            require 'application/views/home/owner.php';
+            require 'application/views/_templates/footer.php';
+    }
+
     /**
      * returns ticket information if it exists for user or  the event
      * @param  int $eventId event id
@@ -92,20 +105,22 @@ class Home extends Controller
      */
     public function eventPageInfo($eventid){
 
-        $sessionid = session_id();
-        $ticketmodel = $this->loadModel("ticketsmodel");
-        $eventmodel = $this->loadModel("eventsmodel");
-
-        $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
-        $event = $eventmodel->getEventById($eventid);
-        require 'application/views/_templates/header.php';
-        if(isset($ticket['id'])){ //check if ticket exists
-            require 'application/views/home/ticket.php';
+        if(isset($_SESSION['verified']) && $_SESSION['verifiedid']==$eventid){
+            $this->loadEventPageAsAdmin();
         }else{
-            require 'application/views/home/description.php';
-        }
-        require 'application/views/_templates/footer.php';
-    }
+            $sessionid = session_id();
+            $ticketmodel = $this->loadModel("ticketsmodel");
+            $eventmodel = $this->loadModel("eventsmodel");
 
-    
+            $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
+            $event = $eventmodel->getEventById($eventid);
+            require 'application/views/_templates/header.php';
+            if(isset($ticket['id'])){ //check if ticket exists
+                require 'application/views/home/ticket.php';
+            }else{
+                require 'application/views/home/description.php';
+            }
+            require 'application/views/_templates/footer.php';
+        }
+    }
 }

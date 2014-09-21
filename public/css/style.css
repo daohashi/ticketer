@@ -3,8 +3,14 @@
     src: url(sinkinsans-700bold-webfont.woff);
 }
 
+html{
+    height:100%;
+}
+
 body{
     font-family:SinkinSans;
+height:90%;
+line-height: 1.2;
 }
 
 /*Index Page CSS*/
@@ -39,16 +45,34 @@ body{
     cursor:pointer;
 }
 
+.mcontain {
+   display: table;
+   width: 100%;
+   height:100%;
+}
+.mcontaincell {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+
+#icons
+{
+    margin-top:10px;
+    height:35px;
+}
+
+#settings
+{
+    float:right;
+}
+
 .Middle
 {
     width:50%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-}
-
-#Events
-{
 }
 
 li {
@@ -64,26 +88,30 @@ li:hover
 }
 
 /*Ticket Page CSS*/
-#eventName,#password,#estimateTime
+#Container
 {
-
+    display:table;
+    height:50%;
+}
+#empty
+{
+    height:25%;
 }
 
 #eventName
 {
-    margin-top:50px;
+    height:20%;
     font-size: 250%;
 }
 
 #ticketNumber
 {
+    height:60%;
     font-size: 850%;
-    margin-top:15%;
 }
 
 #password
 {
-    margin-top:180px;
     font-size: 450%;
     color:#3498db;
 }
@@ -94,17 +122,58 @@ li:hover
     font-size: 200%;
 }
 
+/*Owner CSS*/
+#navigation
+{
+    margin-top:30px;
+}
+
+#nextButton
+{
+width:40%;
+}
+
+/*Description */
+#description
+{
+    width:40%;
+    font-size: 130%;
+}
+
+#grabTicket
+{
+    font-size: 450%;
+    color:#3498db;
+}
+
 
 /*Media Query*/
 @media all and (max-width: 480px) {
     body {
-        font-size: 20px; } }
+        font-size: 15px; } 
+        .Middle
+{
+    width:99%;
+}
+#description
+{
+    width:99%;
+}}
 @media all and (min-width: 481px) and (max-width: 768px) {
     body {
-        font-size: 24px; } }
+        font-size: 19px; } 
+    .Middle
+{
+    width:99%;
+}
+#description
+{
+    width:99%;
+}
+}
 @media all and (min-width: 769px) and (max-width: 1024px) {
     body {
-        font-size: 30px; } }
-@media all and (min-width: 1281px) {
+        font-size: 16px; } }
+@media all and (min-width: 1025px) {
     body {
-        font-size: 20px; } }
+        font-size: 21px; } }

@@ -20,6 +20,33 @@ class Home extends Controller
         require 'application/views/_templates/header.php';
         require 'application/views/home/index.php';
         require 'application/views/_templates/footer.php';
+
+    }
+
+    public function owner()
+    {
+        // load views. within the views we can echo out $songs and $amount_of_songs easily
+        require 'application/views/_templates/header.php';
+        require 'application/views/home/owner.php';
+        require 'application/views/_templates/footer.php';
+        
+    }
+
+    public function ticket()
+    {
+        // load views. within the views we can echo out $songs and $amount_of_songs easily
+        require 'application/views/_templates/header.php';
+        require 'application/views/home/ticket.php';
+        require 'application/views/_templates/footer.php';
+        
+    }
+    public function description()
+    {
+        // load views. within the views we can echo out $songs and $amount_of_songs easily
+        require 'application/views/_templates/header.php';
+        require 'application/views/home/description.php';
+        require 'application/views/_templates/footer.php';
+        
     }
 
     /**

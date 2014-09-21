@@ -1,12 +1,24 @@
+<div id="Coordinates">
+</div>
 <div class="Middle" id="eventName">
+	<div class='mcontain'>
+		<div class='mcontaincell'>
 Hack the North
 </div>
+</div>
+</div>
 <div class="Middle" id="ticketNumber">
+	<div class='mcontain'>
+		<div class='mcontaincell'>
 	<?php echo $ticket['number']; ?>
 </div>
+</div>
+</div>
+
 <div class="Middle" id="password">
 	<?php echo $ticket['code']; ?>
 </div>
+
 
 
 <!-- our JavaScript -->

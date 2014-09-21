@@ -67,6 +67,10 @@ class TicketsModel extends Model
 
     public function deactivateTicket($ticketid){
         try{
+             $sql2 = "UPDATE events SET count=count-1 WHERE id = :eventid";
+            $query2 = $this->db->prepare($sql2);
+            $query2->execute(array(':eventid'=>$eventid));
+
             $sql = "UPDATE tickets SET isactive=0 WHERE id = :tickid";
             $query = $this->db->prepare($sql);
             $query->execute(array(':tickid'=>$ticketid));

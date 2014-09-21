@@ -27,11 +27,11 @@ $('ul#Lists').empty();
 	{
 		if (listOfEvents[i].status)
 		{
-		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li style="background-color:grey;">' + listOfEvents[i].name + "</li></a>");	
+		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li style="background-color:grey;">' + listOfEvents[i].name + " - " + listOfEvents[i].count + "</li></a>");	
 		}
 		else
 		{
-		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li>' + listOfEvents[i].name + "</li></a>");
+		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li>' + listOfEvents[i].name + " - " + listOfEvents[i].count + "</li></a>");
 		}
 	}
 	

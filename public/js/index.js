@@ -25,7 +25,7 @@ function addItem(listOfEvents){
 $('ul#Lists').empty();
 	for (i=0; i < listOfEvents.length; i++)
 	{
-		if (listOfEvents[i].status)
+		if (listOfEvents[i].hasticket >= 1)
 		{
 		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li style="background-color:grey;">' + listOfEvents[i].name + " - " + listOfEvents[i].count + "</li></a>");	
 		}

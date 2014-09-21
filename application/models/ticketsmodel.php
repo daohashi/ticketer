@@ -8,6 +8,11 @@ class TicketsModel extends Model
      */
     public function enterTicket($isactive,$eventid,$number,$ip,$code,$sessionid){
         try{
+
+            $sql2 = "UPDATE events SET count=count+1 WHERE id = :eventid";
+            $query2 = $this->db->prepare($sql2);
+            $query2->execute(array(':eventid'=>$eventid));
+
             $sql = "INSERT INTO tickets (isactive,eventid,number,ip,code,sessionid) VALUES (:isactive , :eventid , :number, :ip , :code , :sessionid)";
             $query = $this->db->prepare($sql);
             $query->execute(

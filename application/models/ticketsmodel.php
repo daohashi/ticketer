@@ -2,62 +2,56 @@
 
 class TicketsModel extends Model
 {
+
     /**
-     * Every model needs a database connection, passed to the model
-     * @param object $db A PDO database connection
+     * creates a ticket for the user at the given event
      */
-    function __construct($db) {
-        try {
-            $this->db = $db;
-        } catch (PDOException $e) {
-            exit('Database connection could not be established.');
+    public function enterTicket($isactive,$eventid,$number,$ip,$code,$sessionid){
+        try{
+            $sql = "INSERT INTO tickets (isactive,eventid,number,ip,code,sessionid) VALUES (:isactive , :eventid , :number, :ip , :code , :sessionid)";
+            $query = $this->db->prepare($sql);
+            $query->execute(
+                                        array(':isactive'=>$isactive,
+                                                ':eventid'=>$eventid,
+                                                ':number'=>$number,
+                                                ':ip'        => $ip,
+                                                ':code'  => $code,
+                                                ':sessionid'=>$sessionid));
+        }catch Exception($e){
+            throw new Exception("Could not enter a new ticket for this event");
         }
     }
 
     /**
-     * Get all songs from database
+     * get the ticket count for a certain session and event
+     * @param  int $eventid   event id
+     * @param  string $sessionid session id
+     * @return int            number of tickets
      */
-    public function getAllSongs()
-    {
-        $sql = "SELECT id, artist, track, link FROM song";
-        $query = $this->db->prepare($sql);
-        $query->execute();
+    public function getTicketCount($eventid,$sessionid){
+        try{
+            $sql = "SELECT count(id) AS amount_of_tickets FROM tickets WHERE eventid = :eventid AND sessionid = :sessionid";
+            $query = $this->db->prepare($sql);
+            $query->execute();
+            $num = $query->fetch();
+        }catch Exception($e){
+            throw new Exception("Could not check if ticket exists");
+        }
+        return $num['amount_of_tickets'];
+    }
 
-        // fetchAll() is the PDO method that gets all result rows, here in object-style because we defined this in
-        // libs/controller.php! If you prefer to get an associative array as the result, then do
-        // $query->fetchAll(PDO::FETCH_ASSOC); or change libs/controller.php's PDO options to
-        // $options = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC ...
+    /**
+     * Get users ticket information by event id
+     */
+    public function getUserTicketByEventId($eventid,$sessionid)
+    {
+        try{
+            $sql = "SELECT * FROM tickets WHERE eventid = :eventid AND sessionid = :sessionid";
+            $query = $this->db->prepare($sql);
+            $query->execute(array(':eventid'=>$eventid,':sessionid'=>$sessionid));
+        }catch Exception($e){
+            throw new Exception("Could not select a ticket");
+        }
         return $query->fetchAll();
-    }
-
-    /**
-     * Add a song to database
-     * @param string $artist Artist
-     * @param string $track Track
-     * @param string $link Link
-     */
-    public function addSong($artist, $track, $link)
-    {
-        // clean the input from javascript code for example
-        $artist = strip_tags($artist);
-        $track = strip_tags($track);
-        $link = strip_tags($link);
-
-        $sql = "INSERT INTO song (artist, track, link) VALUES (:artist, :track, :link)";
-        $query = $this->db->prepare($sql);
-        $query->execute(array(':artist' => $artist, ':track' => $track, ':link' => $link));
-    }
-
-    /**
-     * Delete a song in the database
-     * Please note: this is just an example! In a real application you would not simply let everybody
-     * add/update/delete stuff!
-     * @param int $song_id Id of song
-     */
-    public function deleteSong($song_id)
-    {
-        $sql = "DELETE FROM song WHERE id = :song_id";
-        $query = $this->db->prepare($sql);
-        $query->execute(array(':song_id' => $song_id));
     }
 }

@@ -25,14 +25,13 @@ function addItem(listOfEvents){
 $('ul#Lists').empty();
 	for (i=0; i < listOfEvents.length; i++)
 	{
-		$("ul#Lists").append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"></a>');
 		if (listOfEvents[i].status)
 		{
-		$('ul#Lists a').append('<li style="background-color:grey;">' + listOfEvents[i].name + "</li>");	
+		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li style="background-color:grey;">' + listOfEvents[i].name + "</li></a>");	
 		}
 		else
 		{
-		$('ul#Lists a').append('<li>' + listOfEvents[i].name + "</li>");
+		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li>' + listOfEvents[i].name + "</li></a>");
 		}
 	}
 	

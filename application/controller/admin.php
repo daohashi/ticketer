@@ -10,11 +10,31 @@
  */
 class Admin extends Controller
 {
-	function __construct(){
-		parent::__construct();
+	private function _validate(){
 		if(!isset($_SESSION['verified'])){
-			die("You must be a verified event planner to access this action");
+			die("You must be a verified to access this action");
 		}
+	}
+
+	/**
+	 * try to verify with the given code
+	 */
+	public function verify($code){
+		$result=0;
+		if(isset($_SESSION['verifiedid'])&&isset($_SESSION['verified'])){
+			$result=1;
+		}else{
+			$eventsmodel = $this->loadModel("eventsmodel");
+			$event = $eventsmodel->getEventByCode($code);
+			if(isset($event['id'])){
+				$_SESSION['verified']=1;
+				$_SESSION['verifiedid']=$event['id'];
+				$result=1;
+			}else{
+				$result=0;
+			}
+		}
+		echo json_encode($result);
 	}
 
 	/**
@@ -22,6 +42,7 @@ class Admin extends Controller
 	 * @return JSON data wrt the ticket
 	 */
 	public function produceTicket(){
+		$this->_validate();
 		$wordhelper = $this->loadHelper("words");
 		$word = $wordhelper->getWord();
 

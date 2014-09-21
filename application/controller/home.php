@@ -70,7 +70,7 @@ class Home extends Controller
         $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
         $event = $eventmodel->getEventById($eventid);
         if(isset($ticket['id'])){ //check if ticket exists
-            throw new Exception("You already have a ticket for this event");
+            die("You already have a ticket for this event");
         }else{
             $wordhelper = $this->loadHelper("words");
 
@@ -95,15 +95,14 @@ class Home extends Controller
         $sessionid = session_id();
         $ticketmodel = $this->loadModel("ticketsmodel");
         $eventmodel = $this->loadModel("eventsmodel");
-        
+
         $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
         $event = $eventmodel->getEventById($eventid);
         require 'application/views/_templates/header.php';
         if(isset($ticket['id'])){ //check if ticket exists
             require 'application/views/home/ticket.php';
         }else{
-            $event = $this->loadModel("eventsmodel")->getEventById($eventid);
-            require 'application/views/home/event.php';
+            require 'application/views/home/description.php';
         }
         require 'application/views/_templates/footer.php';
     }

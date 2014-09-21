@@ -11,13 +11,15 @@ class TicketsModel extends Model
             $sql = "INSERT INTO tickets (isactive,eventid,number,ip,code,sessionid) VALUES (:isactive , :eventid , :number, :ip , :code , :sessionid)";
             $query = $this->db->prepare($sql);
             $query->execute(
-                                        array(':isactive'=>$isactive,
-                                                ':eventid'=>$eventid,
-                                                ':number'=>$number,
-                                                ':ip'        => $ip,
-                                                ':code'  => $code,
-                                                ':sessionid'=>$sessionid));
-        }catch Exception($e){
+                                                array(
+                                                    ':isactive'  =>$isactive,
+                                                    ':eventid'   =>$eventid,
+                                                    ':number'    =>$number,
+                                                    ':ip'        => $ip,
+                                                    ':code'      => $code,
+                                                    ':sessionid' =>$sessionid)
+                                        );
+        }catch (Exception $e){
             throw new Exception("Could not enter a new ticket for this event");
         }
     }
@@ -34,7 +36,7 @@ class TicketsModel extends Model
             $query = $this->db->prepare($sql);
             $query->execute();
             $num = $query->fetch();
-        }catch Exception($e){
+        }catch (Exception $e){
             throw new Exception("Could not check if ticket exists");
         }
         return $num['amount_of_tickets'];
@@ -49,7 +51,7 @@ class TicketsModel extends Model
             $sql = "SELECT * FROM tickets WHERE eventid = :eventid AND sessionid = :sessionid";
             $query = $this->db->prepare($sql);
             $query->execute(array(':eventid'=>$eventid,':sessionid'=>$sessionid));
-        }catch Exception($e){
+        }catch (Exception $e){
             throw new Exception("Could not select a ticket");
         }
         return $query->fetchAll();

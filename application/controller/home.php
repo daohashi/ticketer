@@ -36,11 +36,19 @@ class Home extends Controller
      * @return JSON          event information
      */
     public function getEventPageInfo($eventid){
-        $tickethelper = $this->loadHelper("tickets");
-        $ticket = $tickethelper->getTicket($eventid);
-        if($eventid){
 
+        $sessionid = session_id();
+        $ticketmodel = $this->loadModel("ticketsmodel");
+        $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
+
+        require 'application/views/_templates/header.php';
+        if(isset($ticket['id'])){
+            require 'application/views/home/ticket.php';
+        }else{
+            $event = $this->loadModel("eventsmodel")->getEventById($eventid);
+            require 'application/views/home/event.php';
         }
+        require 'application/views/_templates/footer.php';
     }
 
     

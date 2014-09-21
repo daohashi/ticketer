@@ -17,14 +17,39 @@ class Home extends Controller
     public function index()
     {
         // load views. within the views we can echo out $songs and $amount_of_songs easily
-        $this->loadViewWithTemplates("home","index");
+        require 'application/views/_templates/header.php';
+        require 'application/views/home/index.php';
+        require 'application/views/_templates/footer.php';
     }
 
     public function getEvents($latitude,$longitude){
     	echo json_encode(array(
-		    		array('title'=>"TITLE1",'description' => "description1"),
-    				array('title'=>"TITLE2",'description' => "description2"),
-    				array('title'=>"TITLE4",'description' => "description3")
+		    		array('id'=>1,'title'=>"TITLE1",'description' => "description1"),
+    				array('id'=>2,'title'=>"TITLE2",'description' => "description2"),
+    				array('id'=>3,'title'=>"TITLE4",'description' => "description3")
     			));
     }
+
+    /**
+     * returns ticket information if it exists for user or 
+     * @param  int $eventId event id
+     * @return JSON          event information
+     */
+    public function getEventPageInfo($eventid){
+
+        $sessionid = session_id();
+        $ticketmodel = $this->loadModel("ticketsmodel");
+        $ticket = $ticketmodel->getUserTicketByEventId($eventid,$sessionid);
+
+        require 'application/views/_templates/header.php';
+        if(isset($ticket['id'])){
+            require 'application/views/home/ticket.php';
+        }else{
+            $event = $this->loadModel("eventsmodel")->getEventById($eventid);
+            require 'application/views/home/event.php';
+        }
+        require 'application/views/_templates/footer.php';
+    }
+
+    
 }

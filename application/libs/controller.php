@@ -28,7 +28,7 @@ class Controller
         // "objects", which means all results will be objects, like this: $result->user_name !
         // For example, fetch mode FETCH_ASSOC would return results like this: $result["user_name] !
         // @see http://www.php.net/manual/en/pdostatement.fetch.php
-        $options = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING);
+        $options = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING);
 
         // generate a database connection, using the PDO connector
         // @see http://net.tutsplus.com/tutorials/php/why-you-should-be-using-phps-pdo-for-database-access/
@@ -48,26 +48,6 @@ class Controller
         require 'application/models/' . strtolower($model_name) . '.php';
         // return new model (and pass the database connection to the model)
         return new $model_name($this->db);
-    }
-
-    /**
-     * load the view in the given folder
-     * @param  string $folder   folder name
-     * @param  string $viewname view name
-     */
-    public function loadView($folder,$viewname){
-        require "application/views/$folder/$viewname.php";
-    }
-
-    /**
-     * load the view in the given folder but with templates
-     * @param  string $folder   folder name
-     * @param  string $viewname view name
-     */
-    public function loadViewWithTemplates($folder,$viewname){
-        $this->loadView("_templates","header");
-        $this->loadView($folder,$viewname);
-        $this->loadView("_templates","footer");
     }
 
     /**

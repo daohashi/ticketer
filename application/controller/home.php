@@ -136,4 +136,18 @@ class Home extends Controller
             require 'application/views/_templates/footer.php';
         }
     }
+
+    public function menuButton($page){
+        require 'application/views/_templates/header.php';
+        if ($page == "account")
+        {
+            require 'application/views/home/Login.php';
+        }
+        else
+        {
+        require 'application/views/home/' . $page . '.php';
+        }
+        require 'application/views/_templates/footer.php';
+    }
+
 }

@@ -1,0 +1,624 @@
+[22-Nov-2014 00:25:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:25:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:25:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:25:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:25:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:25:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:25:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:25:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:26:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:26:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:26:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'cs9.uhcloud.com' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:26:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'Q456!258w', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:28:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:28:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:28:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:28:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:29:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:29:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:29:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:29:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:33:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[22-Nov-2014 00:33:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[23-Nov-2014 03:40:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[23-Nov-2014 03:40:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:02:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:02:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:11:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:11:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:11:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:11:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1129] Host 'cs9.uhcloud.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=tick...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:12:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:12:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'admin', 'admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:14:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:14:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:14:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:14:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:14:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:14:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:16:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'donaldng_admin'@'localhost' to database 'donaldng_ticketer'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:16:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'donaldng_admin'@'localhost' to database 'donaldng_ticketer'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:16:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'donaldng_admin'@'localhost' to database 'donaldng_ticketer'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:16:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'donaldng_admin'@'localhost' to database 'donaldng_ticketer'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:17:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'donaldng_admin'@'localhost' to database 'donaldng_ticketer'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[11-Dec-2014 20:17:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'donaldng_admin'@'localhost' to database 'donaldng_ticketer'' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Admin123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[15-Dec-2014 00:44:22 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:44:23 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:44:23 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:44:30 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:44:30 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:44:30 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:44:33 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:44:33 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:44:33 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:44:34 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:44:34 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:44:34 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:44:39 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:44:39 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:44:39 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:44:49 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:44:49 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:44:49 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:46:13 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:46:13 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:46:13 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:46:27 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:46:27 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:46:27 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:47:45 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:47:45 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:47:45 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:48:46 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:48:46 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:48:46 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[15-Dec-2014 00:49:04 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[15-Dec-2014 00:49:04 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[15-Dec-2014 00:49:04 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[16-Dec-2014 20:07:03 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[16-Dec-2014 20:07:04 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[16-Dec-2014 20:07:04 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[16-Dec-2014 20:08:20 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[16-Dec-2014 20:08:21 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[16-Dec-2014 20:08:21 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[16-Dec-2014 20:09:46 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:09:46 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:09:46 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:09:59 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:09:59 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:09:59 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:13:27 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:13:27 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:13:27 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:14:27 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:14:27 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:14:27 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:15:27 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:15:27 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:15:27 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:16:27 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:16:27 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:16:27 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:16:44 UTC] PHP Fatal error:  Class 'eventsmodel' not found in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 50
+[16-Dec-2014 20:18:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:18:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:18:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:19:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:19:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:19:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:20:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:20:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:20:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:21:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:21:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:21:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:22:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:22:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:22:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:23:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:23:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:23:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:24:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:24:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:24:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:25:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:25:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:25:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:26:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:26:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:26:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:27:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:27:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:27:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:28:16 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:28:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:28:16 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:29:17 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:29:17 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:29:17 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:30:17 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:30:17 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:30:17 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:31:19 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:31:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:31:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:32:19 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:32:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:32:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:33:19 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:33:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:33:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:34:19 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:34:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:34:19 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:35:20 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:35:20 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:35:20 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:36:20 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:36:20 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:36:20 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:37:21 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:37:21 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:37:21 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:38:22 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:38:22 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:38:22 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:39:22 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:39:22 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:39:22 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:40:23 UTC] PHP Notice:  Undefined variable: pushes in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:40:23 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:40:23 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /home/donaldng/public_html/ticketer/application/models/eventsmodel.php on line 62
+[16-Dec-2014 20:56:11 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[16-Dec-2014 20:56:12 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[16-Dec-2014 20:56:12 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[16-Dec-2014 20:57:45 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[16-Dec-2014 20:57:45 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[16-Dec-2014 20:57:45 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[16-Dec-2014 20:57:51 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[16-Dec-2014 20:57:52 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[16-Dec-2014 20:57:52 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[16-Dec-2014 20:57:54 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 72
+[16-Dec-2014 20:57:54 UTC] PHP Warning:  Missing argument 1 for TicketsModel::getNextTicket(), called in /home/donaldng/public_html/ticketer/application/controller/admin.php on line 49 and defined in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 100
+[16-Dec-2014 20:57:54 UTC] PHP Notice:  Undefined variable: eventid in /home/donaldng/public_html/ticketer/application/models/ticketsmodel.php on line 106
+[16-Dec-2014 21:55:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[16-Dec-2014 21:55:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 21:46:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 21:46:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 21:50:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'donaldng_admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Password123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 21:50:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'donaldng_admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Password123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 21:50:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'donaldng_admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Password123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 21:50:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'donaldng_admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Password123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 21:50:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'donaldng_admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Password123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 21:50:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'donaldng_admin'@'localhost' (using password: YES)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=loca...', 'donaldng_admin', 'Password123', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 21:59:15 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 21:59:15 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 21:59:15 UTC] PHP Fatal error:  require(): Failed opening required 'application/views/home/ListOfTickets.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:03:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(35): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 22:03:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 22:03:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 22:03:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/donaldng/public_html/ticketer/application/libs/controller.php:35
+Stack trace:
+#0 /home/donaldng/public_html/ticketer/application/libs/controller.php(35): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /home/donaldng/public_html/ticketer/application/libs/controller.php(19): Controller->openDatabaseConnection()
+#2 /home/donaldng/public_html/ticketer/application/libs/application.php(68): Controller->__construct()
+#3 /home/donaldng/public_html/ticketer/index.php(25): Application->__construct()
+#4 {main}
+  thrown in /home/donaldng/public_html/ticketer/application/libs/controller.php on line 35
+[03-Jan-2015 22:04:16 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:04:16 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:04:16 UTC] PHP Fatal error:  require(): Failed opening required 'application/views/home/ListOfTickets.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:04:37 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:04:37 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:04:37 UTC] PHP Fatal error:  require(): Failed opening required 'application/views/home/ListOfTickets.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:13:53 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:13:53 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:13:53 UTC] PHP Fatal error:  require(): Failed opening required 'application/views/home/ListOfTickets.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:15:54 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:15:54 UTC] PHP Warning:  require(application/views/home/ListOfTickets.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[03-Jan-2015 22:15:54 UTC] PHP Fatal error:  require(): Failed opening required 'application/views/home/ListOfTickets.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[18-Jan-2015 00:34:52 UTC] PHP Warning:  require(application/views/home/CreateEvent.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[18-Jan-2015 00:34:52 UTC] PHP Warning:  require(application/views/home/CreateEvent.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[18-Jan-2015 00:34:52 UTC] PHP Fatal error:  require(): Failed opening required 'application/views/home/CreateEvent.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[23-Jan-2015 21:19:42 UTC] PHP Warning:  require(application/views/home/CreateEvent.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[23-Jan-2015 21:19:42 UTC] PHP Warning:  require(application/views/home/CreateEvent.php): failed to open stream: No such file or directory in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148
+[23-Jan-2015 21:19:42 UTC] PHP Fatal error:  require(): Failed opening required 'application/views/home/CreateEvent.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/donaldng/public_html/ticketer/application/controller/home.php on line 148

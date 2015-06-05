@@ -1,6 +1,11 @@
 @font-face{
-    font-family: SinkinSans;
-    src: url(sinkinsans-700bold-webfont.woff);
+    font-family: numberFont;
+    src: url(fonts/Znikomit.otf);
+}
+
+@font-face{
+    font-family: wordFont;
+    src: url(fonts/Timeless.ttf);
 }
 
 html{
@@ -8,7 +13,7 @@ html{
 }
 
 body{
-    font-family:SinkinSans;
+    font-family:numberFont;
 height:90%;
 line-height: 1.2;
 }
@@ -29,42 +34,69 @@ a, a:visited{
   background: radial-gradient(black,white, white); /* Standard syntax */
 }
 
+/*Menu css*/
+#menu a
+{
+display:block;
+margin:45px;
+font-size: 200%;
+}
+#menucontainer
+{
+    display: table; 
+    height: 100%;
+    width: 100%
+}
+#menu{
+    display: table-cell; 
+    vertical-align: middle;
+}
 
-.bbblueglow{
-  background: -webkit-radial-gradient(#CCFFFF, white); /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#CCFFFF, white); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#CCFFFF, white); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(#CCFFFF, white); /* Standard syntax */
+.bbblueglow p{
+
+  /*background: -webkit-radial-gradient(#CCFFFF, white); 
+  background: -o-radial-gradient(#CCFFFF, white);  
+  background: -moz-radial-gradient(#CCFFFF, white); 
+  background: radial-gradient(#CCFFFF, white); */
+  /*text-decoration: underline;*/
+  display:inline-block;
 
 }
 
 .btn {
-    background: #3498db;
-    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background:white;
+   /* background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
     background-image: -moz-linear-gradient(top, #3498db, #2980b9);
     background-image: -ms-linear-gradient(top, #3498db, #2980b9);
     background-image: -o-linear-gradient(top, #3498db, #2980b9);
-    background-image: linear-gradient(to bottom, #3498db, #2980b9);
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0px;
-    font-family: Arial;
-    color: #ffffff;
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);*/
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
+-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
+box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
+    -webkit-border-radius: 1;
+    -moz-border-radius: 1;
+    border-radius: 1px;
+    font-family: numberFont;
+    color: black;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
 
-
+    -webkit-transition: box-shadow .5s; /* For Safari 3.1 to 6.0 */
+        transition: box-shadow .5s;
 }
 
 .btn:hover {
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+/*    background: #3cb0fd;*/
+    /*background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
     background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
     background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-    text-decoration: none;
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);*/
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .32);
+-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .32);
+box-shadow: 0 2px 3px rgba(0, 0, 0, .32);
+/*    text-decoration: underline;*/
     cursor:pointer;
 }
 
@@ -77,6 +109,7 @@ a, a:visited{
    display: table-cell;
    text-align: center;
    vertical-align: middle;
+
 }
 
 #Events ul a{
@@ -121,12 +154,27 @@ padding: 5px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    font-family: numberFont;
 }
 
 li {
     padding-bottom:15px;
     padding-top:15px;
     margin:2px;
+    width:auto;
+}
+
+li p{
+    margin-left: auto;
+    margin-right:auto;
+    position:relative;
+}
+
+.dot
+{
+    display:inline-block;
+    margin-bottom:1%;
+    margin-left:25px;
 }
 
 li:hover
@@ -155,6 +203,7 @@ li:hover
 {
     height:60%;
     font-size: 850%;
+    font-family: numberFont;
 }
 
 #password

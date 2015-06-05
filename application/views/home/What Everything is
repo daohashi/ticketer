@@ -1,0 +1,15 @@
+createEvent - creates new event
+
+listoftickets - lists all tickets user has
+
+login - need to complete
+
+description - describes an event
+
+event- shows all events
+
+index- index of page
+
+owner-screen shown if user is owner
+
+ticket-screen shown for each ticket

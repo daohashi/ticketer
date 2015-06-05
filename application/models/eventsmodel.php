@@ -11,7 +11,11 @@ class EventsModel extends Model
      */
     public function getEventsByLocation($latitude,$longitude,$distance=1){
         try{
-            $sql = "SELECT *, (SELECT count(t.id) from tickets as t WHERE t.sessionid = :sessionid AND t.eventid = e.id) as hasticket from events as e WHERE  (e.endtime > :timet) AND POW((( If(:latitude > latitude , :latitude-latitude,latitude-:latitude))*110.54),2)+POW((IF(:longitude>longitude, :longitude-longitude, longitude-:longitude)*111.320*COS(latitude)),2) < POW(:distance,2)";
+            $sql = "SELECT *, (SELECT count(t.id) from tickets as t WHERE t.sessionid = :sessionid AND t.eventid = e.id) as hasticket from events as e WHERE  (e.endtime > :timet) AND 
+                        acos(sin(latitude * 0.0175) * sin(:latitude * 0.0175) 
+                           + cos(latitude * 0.0175) * cos(:latitude * 0.0175) *    
+                             cos((:longitude * 0.0175) - (longitude * 0.0175))
+                          ) * 3959 <= 1";            
             $query = $this->db->prepare($sql);
             $query->execute(array(':sessionid'=>session_id(),':latitude'=>$latitude,':longitude'=>$longitude,':distance'=>$distance,':timet'=>date('Y-m-d H:i:s')));
         }catch (Exception $e){
@@ -48,5 +52,34 @@ class EventsModel extends Model
             throw new Exception("Error trying to get event by id");
         }
         return $query->fetch();
+    }
+
+    public function createEvent($eventInfo)
+     {
+        $data = json_decode($eventInfo);
+        // echo $data->Name;
+        // echo $data->Description;
+        // echo $data->Code;
+        // echo $data->Latitude;
+        // echo $data->Longitude;
+        try{
+             $sql = "INSERT INTO events (name,latitude,longitude,description,time,issuetime,endtime,code) 
+             VALUES (:name , :latitude , :longitude, :description , :time , :issuetime, :endtime, :code)";
+            $query = $this->db->prepare($sql);
+            $query->execute(
+                                                array(
+                                                    ':name'  =>$data->Name,
+                                                    ':latitude'   =>$data->Latitude,
+                                                    ':longitude'    =>$data->Longitude,
+                                                    ':description'       => $data->Description,
+                                                    ':time'      => date("Y-m-d H:i:s"),
+                                                    ':issuetime' => date("Y-m-d H:i:s"),
+                                                    ':endtime' =>date("Y-m-d H:i:s", strtotime('+5 years')),
+                                                    ':code' =>$data->Code)
+                                        );
+        }catch (Exception $e){
+            throw new Exception("Error Creating Event");
+        }
+     
     }
 }

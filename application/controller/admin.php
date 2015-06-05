@@ -46,7 +46,7 @@ class Admin extends Controller
 		$ticketmodel = $this->loadModel('ticketsmodel');
 		$ticketmodel->deactivateTicket($id);
 
-		$ticket = $ticketmodel->getNextTicket();
+		$ticket = $ticketmodel->getNextTicket($_SESSION['verifiedid']);
 		if(!isset($ticket['id'])){
 			$ticket=0;
 		}
@@ -83,5 +83,12 @@ class Admin extends Controller
 				'eventid'=>$eventid,
 				'isactive'=>1
 			));
+	}
+
+	public function makeEvent ($eventInfo)
+	{
+		$eventmodel = $this->loadModel("eventsmodel");
+		$result = $eventmodel->createEvent($eventInfo);
+		echo "Event Created";
 	}
 }

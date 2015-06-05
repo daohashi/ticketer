@@ -69,7 +69,7 @@ class TicketsModel extends Model
         try{
              $sql2 = "UPDATE events SET count=count-1 WHERE id = :eventid";
             $query2 = $this->db->prepare($sql2);
-            $query2->execute(array(':eventid'=>$eventid));
+            $query2->execute(array(':eventid'=>$_SESSION['verifiedid']));
 
             $sql = "UPDATE tickets SET isactive=0 WHERE id = :tickid";
             $query = $this->db->prepare($sql);

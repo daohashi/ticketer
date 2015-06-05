@@ -27,7 +27,7 @@ $('ul#Lists').empty();
 	{
 		if (listOfEvents[i].hasticket >= 1)
 		{
-		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li class="bbblueglow">' + listOfEvents[i].name + " - " + listOfEvents[i].count + "</li></a>");	
+		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li class="bbblueglow"><p>' + listOfEvents[i].name + " - " + listOfEvents[i].count + '</p><img src="/public/img/dot.png" height="auto" width="3%" class="dot"></li></a>');	
 		}
 		else
 		{

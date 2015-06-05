@@ -27,11 +27,7 @@ $('ul#Lists').empty();
 	{
 		if (listOfEvents[i].hasticket >= 1)
 		{
-		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li class="bbblueglow">' + listOfEvents[i].name + " - " + listOfEvents[i].count + "</li></a>");	
-		}
-		else
-		{
-		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li>' + listOfEvents[i].name + " - " + listOfEvents[i].count + "</li></a>");
+		$('ul#Lists').append('<a  href="/home/eventPageInfo/' + listOfEvents[i].id +'"><li class="bbblueglow"><p>' + listOfEvents[i].name + " - " + listOfEvents[i].count + '</p><img src="/public/img/dot.png" height="auto" width="3%" class="dot"></li></a>');	
 		}
 		if(i+1<listOfEvents.length){
 			$('ul#Lists').append("<div class='sexy_line'></div>");
@@ -59,27 +55,6 @@ $("#textbox").bind("keypress", function(event) {
     }
 });
 
-$("#submitbutton").on("click",function(){
-	if ($("#textbox").val()!= "")
-	{
-		$.ajax({url:"/admin/verify/" + $("#textbox").val(),success:function(result){
-			if (result!=0)
-			{
-				$("#Login").slideUp(800);
-				$("#settings").hide();
-				$("#unlocked").show();
-			}else{
-			    	alert("You entered a invalid code");
-			 }
-		 }});
-	}
-
-
-});
-if(verified){
-	$("#settings").hide();
-	$("#unlocked").show();
-}
 getLocation();
 
 
